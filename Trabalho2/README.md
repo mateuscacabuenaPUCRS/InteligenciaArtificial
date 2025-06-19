@@ -23,3 +23,20 @@ Ensinar uma rede neural a jogar Jogo da Velha através de partidas contra o Mini
 - IA adversária com Minimax (3 níveis de dificuldade)
 
 ---
+
+## Run
+
+Para executar o projeto, siga os passos abaixo:
+
+1. Execute o melhor cromossomo com:
+   ```bash
+   python main.py
+   ```
+2. Inicie a API com:
+   ```bash
+   uvicorn api:app --reload
+   ```
+3. No diretório do frontend, rode:
+   ```bash
+   npm run dev
+   ```

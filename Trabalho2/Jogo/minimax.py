@@ -29,30 +29,26 @@ def checar_vencedor(tabuleiro):
 
 # 3. Função principal: algoritmo Minimax (modo difícil = sempre usa essa)
 def minimax(tabuleiro, jogador):
-    """
-    Algoritmo Minimax para o jogador atual.
-    Retorna a melhor jogada (índice de 0 a 8).
-    """
     vencedor = checar_vencedor(tabuleiro)
     if vencedor is not None:
-        return vencedor * jogador  # +1 se vencer, -1 se perder, 0 se empate
+        return vencedor * jogador, None  # valor, jogada
 
     jogadas = jogadas_validas(tabuleiro)
-    if not jogadas:
-        return 0  # empate forçado (sem jogadas válidas)
-
     melhor_valor = -np.inf
-    melhor_jogada = jogadas[0]  # inicialização segura
+    melhor_jogada = None
 
     for i in jogadas:
         novo_tab = tabuleiro.copy()
         novo_tab[i] = jogador
-        valor = -minimax(novo_tab, -jogador)  # alterna jogador
+        valor, _ = minimax(novo_tab, -jogador)
+        valor = -valor  # inverte porque é o adversário
+
         if valor > melhor_valor:
             melhor_valor = valor
             melhor_jogada = i
 
-    return melhor_jogada
+    return melhor_valor, melhor_jogada
+
 
 
 # 4. Função adaptada ao modo (fácil, médio, difícil)
@@ -75,6 +71,7 @@ def jogada_minimax_modo(tabuleiro, modo: str):
         raise ValueError("Modo inválido")
 
     if usar_minimax:
-        return minimax(tabuleiro, O)
+        _, jogada = minimax(tabuleiro, O)
+        return jogada
     else:
         return random.choice(jogadas_validas(tabuleiro))
