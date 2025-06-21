@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import "./App.css";
 import ResponsiveGrid from "./components/ResponsiveGrid";
 import GraficoEvolucao from "./components/GraficoEvolucao";
+import GraficoEvolucaoPorDificuldade from "./components/GraficoEvolucaoPorDificuldade";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     >
       <ResponsiveGrid />
       <GraficoEvolucao />
+      <GraficoEvolucaoPorDificuldade />
     </Box>
   );
 }

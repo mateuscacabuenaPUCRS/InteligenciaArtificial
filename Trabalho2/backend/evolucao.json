@@ -1,0 +1,77 @@
+[
+  {
+    "geracao": 1,
+    "melhor": 1.0,
+    "media": 0.565
+  },
+  {
+    "geracao": 2,
+    "melhor": 1.0,
+    "media": 0.45499999999999996
+  },
+  {
+    "geracao": 3,
+    "melhor": 0.8,
+    "media": 0.5549999999999998
+  },
+  {
+    "geracao": 4,
+    "melhor": 1.0,
+    "media": 0.45999999999999996
+  },
+  {
+    "geracao": 5,
+    "melhor": 0.9,
+    "media": 0.47999999999999987
+  },
+  {
+    "geracao": 6,
+    "melhor": 0.6,
+    "media": 0.37500000000000006
+  },
+  {
+    "geracao": 7,
+    "melhor": 0.8,
+    "media": 0.41500000000000004
+  },
+  {
+    "geracao": 8,
+    "melhor": 0.8,
+    "media": 0.305
+  },
+  {
+    "geracao": 9,
+    "melhor": 1.0,
+    "media": 0.39
+  },
+  {
+    "geracao": 10,
+    "melhor": 0.8,
+    "media": 0.24000000000000005
+  },
+  {
+    "geracao": 11,
+    "melhor": 0.0,
+    "media": 0.0
+  },
+  {
+    "geracao": 12,
+    "melhor": 0.0,
+    "media": 0.0
+  },
+  {
+    "geracao": 13,
+    "melhor": 0.0,
+    "media": 0.0
+  },
+  {
+    "geracao": 14,
+    "melhor": 0.0,
+    "media": 0.0
+  },
+  {
+    "geracao": 15,
+    "melhor": 0.0,
+    "media": 0.0
+  }
+]

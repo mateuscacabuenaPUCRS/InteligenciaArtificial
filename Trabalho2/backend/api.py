@@ -10,7 +10,7 @@ from Jogo.minimax import jogada_minimax_modo
 from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
-app.mount("/", StaticFiles(directory=".", html=True), name="static")
+app.mount("/static", StaticFiles(directory=".", html=True), name="static")
 
 # CORS para o frontend
 app.add_middleware(

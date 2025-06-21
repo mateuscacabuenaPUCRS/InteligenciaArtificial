@@ -22,7 +22,7 @@ export default function GraficoEvolucao() {
   const [dados, setDados] = useState<DadoEvolucao[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/evolucao.json")
+    fetch("http://localhost:8000/static/evolucao.json")
       .then((res) => res.json())
       .then((json) => setDados(json))
       .catch((err) => console.error("Erro ao buscar evolucao.json:", err));
