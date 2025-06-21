@@ -24,11 +24,9 @@ def funcao_aptidao_rede(cromossomo, n_partidas=5, modo_minimax="medio"):
             vencedor = checar_vencedor(tabuleiro)
             if vencedor is not None:
                 if vencedor == X:
-                    pontuacao_total += 10
+                    pontuacao_total += 1
                 elif vencedor == 0:
-                    pontuacao_total += 5
-                elif vencedor == O:
-                    pontuacao_total -= 10
+                    pontuacao_total += 0.5
                 break
 
             if turno_rede:
@@ -47,7 +45,7 @@ def funcao_aptidao_rede(cromossomo, n_partidas=5, modo_minimax="medio"):
                 jogada = int(np.argmax(saida))
 
                 if tabuleiro[jogada] != VAZIO:
-                    pontuacao_total -= 20  # jogada inválida
+                    pontuacao_total -= 1  # jogada inválida
                     break
 
                 tabuleiro[jogada] = X

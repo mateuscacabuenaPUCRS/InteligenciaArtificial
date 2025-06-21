@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import "./App.css";
 import ResponsiveGrid from "./components/ResponsiveGrid";
+import GraficoEvolucao from "./components/GraficoEvolucao";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       height="100%"
     >
       <ResponsiveGrid />
+      <GraficoEvolucao />
     </Box>
   );
 }
